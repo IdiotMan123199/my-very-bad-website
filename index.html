@@ -7,10 +7,25 @@
   <title>my cool website</title>
 
   <style>
+    body {
+      background-color: lightblue;
+    }
+
     .container {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+    }
+
+    button {
+      font-weight: bolder;
+      width: 5vw;
+      height: 5vw;
+      border-radius: 50%;
+      border: none;
+      background-color: rgb(94, 94, 94);
+      color: rgb(255, 255, 255);
+      font-size: 3vw;
     }
   </style>
 </head>
@@ -19,8 +34,8 @@
   <div style="position: relative; font-size: 25px; text-align: center; margin-bottom: 5px;"> Bad Calc </div>
 
   <div class="container">
-    <input style="position: relative; width: 10%;" id="input1">
-    <input style="position: relative; width: 10%;" id="input2">
+    <input style="position: relative; width: 20%;" id="input1">
+    <input style="position: relative; width: 20%;" id="input2">
   </div>
 
   <br>
@@ -28,14 +43,14 @@
   <div class="container">
     <button id="add"> + </button>
     <button id="minus"> - </button>
-    <button id="multiply"> * </button>
-    <button id="divide"> / </button>
+    <button id="multiply"> x </button>
+    <button id="divide"> ÷ </button>
   </div>
 
   <br>
 
-  <div id="answer"> Answer: 0 </div>
-  <div id="debugshit"> debug shit: NIL </div>
+  <div style="text-align: center;" id="answer"> Answer: 0 </div>
+  <div style="text-align: center;" id="debugshit"> debug shit: NIL </div>
 
   <script src="script.js"></script>
 </body>
