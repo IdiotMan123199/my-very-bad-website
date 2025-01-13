@@ -9,12 +9,25 @@ var dividingStuff = document.getElementById("divide");
 var answer = document.getElementById("answer");
 var debugtext = document.getElementById("debugshit");
 
+var hovering_elements = document.querySelectorAll(".hover_size");
+
 function debug() {
   var num1 = Number(input1.value);
   var num2 = Number(input2.value);
 
   debugtext.textContent = `Debug: ${num1} and ${num2}`;
 }
+
+hovering_elements.forEach(function(element) {
+  element.addEventListener('mouseenter', function() {
+      element.style.transformOrigin = "center";
+      element.style.transform = "scale(1.05)";
+  });
+
+  element.addEventListener('mouseleave', function() {
+      element.style.transform = "scale(1)";
+  });
+});
 
 addingStuff.addEventListener("click", function() {
   var num1 = Number(input1.value);
