@@ -5,17 +5,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>my cool website</title>
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  </style>
 </head>
 
 <body>
-  <div style="position: relative;left:50%;font-size: 25px;"> Bad Calc </div>
-  <input style="position: relative; transform: translate(-50%, 0%);" id="input1"></input>
-  <input style="position: relative; transform: translate(-50%, 0%);" id="input2"></input>
+  <div style="position: relative; left: 50%; font-size: 25px; transform: translateX(-50%);"> Bad Calc </div>
 
-  <button id="add"> + </button>
-  <button id="minus"> - </button>
-  <button id="multiply"> * </button>
-  <button id="divide"> / </button>
+  <div class="container">
+    <input style="position: relative; width: 10%;" id="input1">
+    <input style="position: relative; width: 10%;" id="input2">
+  </div>
+
+  <br>
+
+  <div class="container">
+    <button id="add"> + </button>
+    <button id="minus"> - </button>
+    <button id="multiply"> * </button>
+    <button id="divide"> / </button>
+  </div>
+
+  <br>
 
   <div id="answer"> Answer: 0 </div>
   <div id="debugshit"> debug shit: NIL </div>
