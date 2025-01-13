@@ -22,7 +22,7 @@ hovering_elements.forEach(function(element) {
   element.addEventListener('mouseenter', function() {
       element.style.transformOrigin = "center";
       element.style.transform = "scale(1.05)";
-      element.style.border = "1px solid black";
+      element.style.border = "2px solid white";
   });
 
   element.addEventListener('mouseleave', function() {
